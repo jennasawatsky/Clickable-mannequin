@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mannequin-container {
+  display: grid;
+  grid-template-columns: 90px 24px 30px 30px 42px 18px 12px 30px 36px 30px 18px 60px 12px;
+  grid-template-rows: 72px 24px 60px 42px 60px 144px 54px 18px 54px 24px 150px;
+  grid-gap: 1px;
+  background-image: url(../images/Mannequin.png);
+  max-width: 444px;
+  max-height: 712px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.head-neck{
+grid-column-start: 3;
+grid-column-end: 6;
+grid-row-start: 2;
+grid-row-end: 5;
+}
+
+.wrist {
+grid-column: 12 / span 1;
+grid-row: 3 / span 1;
+}
+
+.elbow {
+  grid-column: 9 / span 2;
+  grid-row: 4 / span 1;
+}
+
+.shoulder {
+  grid-column: 5 / span 2;
+  grid-row: 5 / span 1;
+}
+
+.back-spine {
+  grid-row: 6 / span 1;
+  grid-column: 5 / span 1;
+}
+
+.hip {
+  grid-column: 5 /span 1;
+  grid-row: 7 / span 1;
+}
+
+.foot-ankle {
+  grid-row: 9 / span 2;
+  grid-column: 8/ span 2;
+}
+
+.knee {
+  grid-column: 2 / span 2;
+  grid-row: 9 / span 1;
+}
+
+.mannequin-background {
+  background-color: grey;
+}
